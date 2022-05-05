@@ -482,6 +482,13 @@
             </li>
           </ul>
         </div>
+        <div>
+          <span class="follow-text">Подпишитесь на рассылку</span>
+          <div class="flex baseline">
+          <input placeholder="E-mail" class="mail-input" type="mail" name="mail">
+          <button type="submit" class="button-telegram">Подписаться <svg class="svg-telegram"><use href="/images/symbol-defs.svg#icon-icon-send"></use></svg></button>
+            </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -491,6 +498,49 @@
             <use href="./images/symbol-defs.svg#icon-close-button"></use>
           </svg>
         </button>
+        <div class="form-container">
+        <h2 class="form-topic">Оставьте свои данные, мы вам перезвоним</h1>
+          <form class="form-block">
+            <label class="label-settings">
+              <div class="form-div">
+              <span class="form-name">Имя</span>
+              <input class="input-settings input-padding" type="name" name="name">
+              <svg class="form-svg-settings">
+                <use href="./images/symbol-defs.svg#icon-person-black-18dp-1">
+                </use>
+              </svg>
+              </div>
+            </label>
+            <label class="label-settings">
+              <div class="form-div">
+              <span class="form-name">Телефон</span>
+              <input class="input-settings input-padding" type="tel" name="tel">
+                <svg class="form-svg-settings">
+                <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1">
+                </use>
+              </svg>
+            </div>
+            </label>
+            <label class="label-settings">
+              <div class="form-div">
+              <span class="form-name">Почта</span>
+              <input class="input-settings input-padding" type="mail" name="mail">
+            <svg class="form-svg-settings">
+                <use href="./images/symbol-defs.svg#icon-email-black-18dp-1">
+                </use>
+              </svg></div>
+            </label>
+          <label class="label-settings">
+            <span class="form-name">Комментарий</span>
+            <textarea class="input-settings textarea-padding" name="Комментарий" id="" cols="30" rows="5" placeholder="Введите текст"></textarea>
+          </label>
+          <div class="policy-div">
+            <input type="checkbox" class="input-check is-hidden" id="input-check" name="policy">
+          <label for="input-check" class="check-text"><span>Соглашаюсь с рассылкой и принимаю</span><a class="policy" href="">Условия договора</a></label>
+          </div>
+          <button type="submit" class="submit-button">Отправить</button>
+          </form>
+          </div>
       </div>
     </div>
   </body>

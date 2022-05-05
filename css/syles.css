@@ -36,14 +36,17 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+form {
   margin: 0;
   padding: 0;
 }
+
 a {
   margin: 0;
   padding: 0;
 }
+
 :root {
   --text-color: #212121;
   --active-elemnts: #2196f3;
@@ -343,6 +346,7 @@ header {
 
 .footer-follow-block {
   margin-left: 70px;
+  margin-right: 93px;
 }
 
 .footer-follow-us-icons {
@@ -390,6 +394,52 @@ header {
 
 .baseline {
   align-items: baseline;
+}
+
+.button-telegram {
+  width: 200px;
+  height: 50px;
+  background-color: var(--active-elemnts);
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.button-telegram:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.svg-telegram {
+  fill: var(--white-color);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.mail-input {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: none;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  color: var(--white-color);
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
 }
 
 /*----------------------------- STUDIO(MAIN PAGE) -----------------------------*/
@@ -628,6 +678,153 @@ header {
   height: 92px;
   padding: 16px 32px;
 }
+
+/*----------------------------- BACKDROP -----------------------------*/
+
+.form-container {
+  padding: 40px;
+}
+
+.form-topic {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-settings {
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.form-name {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--grey-color);
+}
+
+.form-name:first-child {
+  display: block;
+  margin-top: 12px;
+}
+
+.input-settings {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  resize: none;
+}
+
+.input-settings:focus {
+  border: 1px solid var(--active-elemnts);
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-settings:focus + .form-svg-settings {
+  fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-padding {
+  padding: 12px 16px;
+}
+
+.input-padding {
+  padding: 11px 12px 11px 41px;
+}
+
+.form-svg-settings {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 28px;
+  left: 13px;
+}
+
+.form-div {
+  position: relative;
+}
+
+.check-text {
+  display: flex;
+  margin-right: 7px;
+}
+
+.check-text::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+}
+
+.input-check:checked + .check-text::before {
+  background-color: var(--active-elemnts);
+  border: 2px solid var(--active-elemnts);
+  background-image: url(../images/Vector.svg);
+}
+
+.policy {
+  text-decoration: none;
+  margin-left: 4px;
+  color: var(--active-elemnts);
+  border-bottom: 1px solid var(--active-elemnts);
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button {
+  color: var(--white-color);
+  background-color: var(--active-elemnts);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin: 30px auto 0 auto;
+  border: none;
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.policy-div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 /*----------------------------- PORTFOLIO -----------------------------*/
 
 /*----------------------------- SECTION-1 -----------------------------*/
