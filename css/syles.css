@@ -121,7 +121,7 @@ header {
 
 .modal {
   width: 528px;
-  min-height: 581px;
+  padding: 40px;
   background-color: white;
   border-radius: 4px;
   position: absolute;
@@ -149,6 +149,10 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.modal-button-close:hover {
+  fill: var(--active-elemnts);
 }
 
 .is-hidden {
@@ -345,8 +349,8 @@ header {
 }
 
 .footer-follow-block {
-  margin-left: 70px;
-  margin-right: 93px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-follow-us-icons {
@@ -681,10 +685,6 @@ header {
 
 /*----------------------------- BACKDROP -----------------------------*/
 
-.form-container {
-  padding: 40px;
-}
-
 .form-topic {
   font-style: normal;
   font-weight: 700;
@@ -755,7 +755,7 @@ header {
   position: absolute;
   width: 18px;
   height: 18px;
-  top: 28px;
+  top: 40px;
   left: 13px;
 }
 
@@ -823,6 +823,21 @@ header {
   margin-top: 20px;
   display: flex;
   justify-content: center;
+    align-items: center;
+      flex-wrap: wrap;
+}
+}
+
+.policy-text {
+  color: var(--grey-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /*----------------------------- PORTFOLIO -----------------------------*/
